@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Interactive Button
+	</title>
+</head>
+
+<body style="text-align:center;">
+	<h1 style="color:green;">
+		Avantika
+	</h1>
+
+	<h3>
+		Click on button to change the 
+		background color
+	</h3>
+
+	<button onclick="myFunc()">
+		Click here
+	</button>
+
+	<h2 id="GFG" style="color:rgb(109, 167, 109);"></h2>
+
+	<script>
+		let result = document.getElementById("GFG");
+
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+
+		function myFunc() {
+			changeColor('wheat');
+			result.innerHTML = "Background Color changed";
+		}	 
+	</script>
+</body>
+
+</html>
